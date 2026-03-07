@@ -31,6 +31,8 @@ header {
     border-bottom: 1px solid #000000;
     column-gap: 8px;
     align-items: end;
+    color: #ffffff;
+
 }
 
 header img {
