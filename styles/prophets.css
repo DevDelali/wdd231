@@ -1,0 +1,30 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+header,
+footer {
+    background-color: #0E0648;
+    color: white;
+    padding: 1rem;
+}
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+section {
+    background-color: #2986cc;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
