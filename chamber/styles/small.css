@@ -1,0 +1,158 @@
+:root {
+    --darkPurple: #28104E;
+    --lightPurple: #DEACF5;
+    --medPurple: #6237A0;
+    --text-fonts: 'Roboto', 'Condensed';
+}
+
+* {
+    font-family: var(--text-fonts);
+    box-sizing: border-box;
+}
+
+header,
+nav,
+main,
+footer {
+    max-width: 840px;
+    margin: 0 auto;
+    background-color: var(--lightPurple);
+}
+
+/* HEADER */
+header {
+    background-color: var(--darkPurple);
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    align-items: end;
+    padding: 5px 0px 5px 5px;
+    color: #ffffff;
+    column-gap: 10px;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    display: block;
+
+}
+
+header span {
+    font-size: 1.5rem;
+
+}
+
+/* Hamburger */
+.hamburger {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: (var(--medPurple));
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 1.5rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/* NAVIGATION */
+.navigation {
+    background-color: #ffffff;
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.8rem 10px;
+    color: var(--darkPurple);
+    text-decoration: none;
+    border: #28104E solid 1px;
+}
+
+.navigation li.current {
+    background-color: var(--medPurple);
+}
+
+.navigation li.current a {
+    color: #ffffff;
+}
+
+.navigation a:hover {
+    color: #ffffff;
+    background-color: var(--medPurple);
+}
+
+/* MAIN */
+main {
+    padding: 10px;
+}
+
+h1,
+h2 {
+    margin-left: 10px;
+}
+
+/* SECTION */
+section {
+    margin: 20px;
+    /* border: #000000 solid 1px; */
+}
+
+section h2 {
+    background-color: var(--medPurple);
+    padding: 10px;
+    margin: 0;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: var(--darkPurple);
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+footer p {
+    color: var(--lightPurple)
+}
+
+footer .socials {
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+
+.socials img {
+    width: 22px;
+    height: 22px;
+}
+
+.socials a {
+    color: var(--lightPurple);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.socials a:hover {
+    border-radius: 5px;
+    border: var(--medPurple) solid 2px;
+}

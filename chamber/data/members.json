@@ -1,0 +1,65 @@
+{
+    "businesses": [
+        {
+            "company_name": "TME Enterprise",
+            "address": "Accra, Ghana",
+            "phone_number": "+233 24 123 4567",
+            "url": "https://www.tmeenterprise.com",
+            "img": "images/tme-logo.png",
+            "members_level": "gold"
+        },
+        {
+            "company_name": "Tech Solutions Ltd.",
+            "address": "Kumasi, Ghana",
+            "phone_number": "+233 20 987 6543",
+            "url": "https://www.techsolutions.com",
+            "img": "images/tech-sol-logo.png",
+            "members_level": "silver"
+        },
+        {
+            "company_name": "Innovatech Ghana",
+            "address": "Takoradi, Ghana",
+            "phone_number": "+233 27 555 1234",
+            "url": "https://www.innovatechghana.com",
+            "img": "images/innovatech-logo.jpeg",
+            "members_level": "member"
+        },
+        {
+            "company_name": "Green Energy Co.",
+            "address": "Cape Coast, Ghana",
+            "phone_number": "+233 26 789 4321",
+            "url": "https://www.greenenergyco.com",
+            "img": "images/green-energy-logo.jpeg",
+            "members_level": "member"
+        },
+        {
+            "company_name": "AgriTech Solutions",
+            "address": "Tamale, Ghana",
+            "phone_number": "+233 25 321 6789",
+            "url": "https://www.agritechsolutions.com",
+            "img": "images/agri-tech-logo.png",
+            "members_level": "member"
+        },
+        {
+            "company_name": "HealthTech Innovations",
+            "address": "Accra, Ghana",
+            "phone_number": "+233 24 654 3210",
+            "img": "images/healthtech-logo.jpeg",
+            "members_level": "gold"
+        },
+        {
+            "company_name": "EduTech Ghana",
+            "address": "Kumasi, Ghana",
+            "phone_number": "+233 20 432 5678",
+            "img": "images/edutech-logo.png",
+            "members_level": "silver"
+        },
+        {
+            "company_name": "FinTech Solutions",
+            "address": "Takoradi, Ghana",
+            "phone_number": "+233 27 876 5432",
+            "img": "images/fintech-logo.png",
+            "members_level": "gold"
+        }
+    ]
+}
