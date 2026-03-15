@@ -39,8 +39,8 @@ const displayBusiness = (businesses) => {
         image.setAttribute('width', '200');
         image.setAttribute('height', '150');
 
-        // Membership Level - assuming it's an array with object, take the first level
-        members_level.textContent = `Membership Level: ${business.membership_level}`;
+        // Membership Level
+        members_level.textContent = `Membership Level: ${business.members_level}`;
     }
 
         // Add elements to card

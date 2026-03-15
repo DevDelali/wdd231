@@ -5,7 +5,7 @@
             "address": "Accra, Ghana",
             "phone_number": "+233 24 123 4567",
             "url": "https://www.tmeenterprise.com",
-            "img": "images/tme-logo.png",
+            "img": "data/images/tme-enterprise-logo.jfif",
             "members_level": "gold"
         },
         {
@@ -13,7 +13,7 @@
             "address": "Kumasi, Ghana",
             "phone_number": "+233 20 987 6543",
             "url": "https://www.techsolutions.com",
-            "img": "images/tech-sol-logo.png",
+            "img": "data/images/techsolutions_logo.jfif",
             "members_level": "silver"
         },
         {
@@ -21,7 +21,7 @@
             "address": "Takoradi, Ghana",
             "phone_number": "+233 27 555 1234",
             "url": "https://www.innovatechghana.com",
-            "img": "images/innovatech-logo.jpeg",
+            "img": "data/images/innovatech-logo.jfif",
             "members_level": "member"
         },
         {
@@ -29,7 +29,7 @@
             "address": "Cape Coast, Ghana",
             "phone_number": "+233 26 789 4321",
             "url": "https://www.greenenergyco.com",
-            "img": "images/green-energy-logo.jpeg",
+            "img": "data/images/green-energy-logo.jfif",
             "members_level": "member"
         },
         {
@@ -44,7 +44,7 @@
             "company_name": "HealthTech Innovations",
             "address": "Accra, Ghana",
             "phone_number": "+233 24 654 3210",
-            "img": "images/healthtech-logo.jpeg",
+            "img": "images/health-tech-logo.jfif",
             "members_level": "gold"
         },
         {

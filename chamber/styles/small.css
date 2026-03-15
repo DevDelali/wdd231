@@ -53,7 +53,7 @@ header span {
 
 .hamburger::before {
     content: "\2630";
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .hamburger.show::before {
