@@ -1,60 +1,55 @@
+const url = "data/members.json";
+
+const cards = document.querySelector("#cards");
+
+
 async function getBusinessData() {
-    try {
-        const response = await fetch("data/members.json");
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const data = await response.json();
-        console.table(data.businesses);
-        displayBusiness(data.businesses);
-    } catch (error) {
-        console.error('Error fetching business data:', error);
-    }
+    const response = await fetch(url);
+    const data = await response.json();
+    console.table(data.businesses);
+    displayBusinesses(data.businesses);
 }
 
-const displayBusiness = (businesses) => {
-    const cards = document.querySelector("#cards");
+getBusinessData();
+
+const displayBusinesses = (businesses) => {
     businesses.forEach((business) => {
         // Create elements
         let card = document.createElement('section');
-        let company_name = document.createElement('h2');
+        let companyName = document.createElement('h2');
         let address = document.createElement('p');
         let phone = document.createElement('p');
-        let url = document.createElement('a');
-        let image = document.createElement('img');
-        let members_level = document.createElement('p');
+        let membershipLevel = document.createElement('p');
+        let portrait = document.createElement('img');
+        let websiteLink = document.createElement('a');
 
-        // Set content
-        company_name.textContent = business.company_name;
+        // Company name
+        companyName.textContent = business.company_name;
+
+        // Additional information
         address.textContent = `Address: ${business.address}`;
         phone.textContent = `Phone: ${business.phone_number}`;
-        if (business.url) {
-            url.textContent = 'Visit Website';
-            url.href = business.url;
-            url.target = '_blank';
-        } else {
-            url.style.display = 'none';
-        }
+        membershipLevel.textContent = `Membership Level: ${business.members_level}`;
 
         // Image attributes
-        image.setAttribute('src', business.img);
-        image.setAttribute('alt', `Logo of ${business.company_name}`);
-        image.setAttribute('loading', 'lazy');
-        image.setAttribute('width', '200');
-        image.setAttribute('height', '150');
+        portrait.setAttribute('src', business.img);
+        portrait.setAttribute('alt', `Logo of ${business.company_name}`);
+        portrait.setAttribute('loading', 'lazy');
+        portrait.setAttribute('width', '200');
+        portrait.setAttribute('height', '150');
 
-        // Membership Level
-        members_level.textContent = `Membership Level: ${business.members_level}`;
+        // Website link
+        websiteLink.textContent = `Url: ${business.url}`;
 
         // Add elements to card
-        card.appendChild(company_name);
-        card.appendChild(image);
+        card.appendChild(companyName);
+        card.appendChild(portrait);
         card.appendChild(address);
         card.appendChild(phone);
-        card.appendChild(members_level);
-        card.appendChild(url);
+        card.appendChild(membershipLevel);
+        card.appendChild(websiteLink);
 
         // Add card to page
         cards.appendChild(card);
     });
-    getBusinessData();
+};
