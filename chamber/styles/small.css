@@ -105,7 +105,7 @@ main {
 h1,
 h2 {
     margin-left: 10px;
-    color: var(--darkPurple);
+    color: var(--lightPurple);
 }
 
 /* SECTION */
