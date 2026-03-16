@@ -28,9 +28,13 @@ const displayBusiness = (businesses) => {
         company_name.textContent = business.company_name;
         address.textContent = `Address: ${business.address}`;
         phone.textContent = `Phone: ${business.phone_number}`;
-        url.textContent = 'Visit Website';
-        url.href = business.url;
-        url.target = '_blank';
+        if (business.url) {
+            url.textContent = 'Visit Website';
+            url.href = business.url;
+            url.target = '_blank';
+        } else {
+            url.style.display = 'none';
+        }
 
         // Image attributes
         image.setAttribute('src', business.img);
@@ -41,20 +45,16 @@ const displayBusiness = (businesses) => {
 
         // Membership Level
         members_level.textContent = `Membership Level: ${business.members_level}`;
-    }
 
         // Add elements to card
         card.appendChild(company_name);
-    card.appendChild(image);
-    card.appendChild(address);
-    card.appendChild(phone);
-    card.appendChild(members_level);
-    card.appendChild(url);
+        card.appendChild(image);
+        card.appendChild(address);
+        card.appendChild(phone);
+        card.appendChild(members_level);
+        card.appendChild(url);
 
-    // Add card to page
-    cards.appendChild(card);
-});
-};
-
-// Call the function to load data
-getBusinessData();
+        // Add card to page
+        cards.appendChild(card);
+    });
+    getBusinessData();
