@@ -21,7 +21,7 @@
             "address": "Takoradi, Ghana",
             "phone_number": "+233 27 555 1234",
             "url": "https://www.innovatechghana.com",
-            "img": "images/innovatech-logo.jfif",
+            "img": "images/innovatech-logo.jpg",
             "members_level": 1
         },
         {
@@ -29,7 +29,7 @@
             "address": "Cape Coast, Ghana",
             "phone_number": "+233 26 789 4321",
             "url": "https://www.greenenergyco.com",
-            "img": "images/green-energy-logo.jfif",
+            "img": "images/green-energy-logo.webp",
             "members_level": 1
         },
         {
@@ -45,7 +45,7 @@
             "address": "Accra, Ghana",
             "phone_number": "+233 24 654 3210",
             "url": "https://www.healthtechinnovations.com",
-            "img": "images/health-tech-logo.jfif",
+            "img": "images/health-tech-logo.webp",
             "members_level": 3
         },
         {

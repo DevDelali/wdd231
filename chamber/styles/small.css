@@ -170,3 +170,17 @@ footer .socials {
     border-radius: 5px;
     border: var(--medPurple) solid 2px;
 }
+
+/* Button */
+button {
+    background-color: var(--medPurple);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: var(--darkPurple);
+}
