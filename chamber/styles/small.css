@@ -102,7 +102,12 @@ main {
     padding: 10px;
 }
 
-h1,
+h1 {
+    margin-left: 10px;
+    color: var(--darkPurple);
+}
+
+
 h2 {
     margin-left: 10px;
     color: var(--lightPurple);
