@@ -84,6 +84,10 @@ header span {
     border: #28104E solid 1px;
 }
 
+.navigation li {
+    color: var(--darkPurple);
+}
+
 .navigation li.current {
     background-color: var(--medPurple);
 }
