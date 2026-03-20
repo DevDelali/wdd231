@@ -1,13 +1,42 @@
-.card {
-    border: 1px solid black;
-    border-radius: 5px;
-    background-color: powderblue;
-    text-align: center;
+main {
+    background-color: #42cef5;
+    padding: 1rem;
 }
 
+.card {
+    border: 1px solid black;
+    border-radius: 2px;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 840px;
+}
+
+.card h1,
 .card h2 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
+    color: white;
+    margin: .3rem 0;
+    background-color: #5594a6;
+    padding: 1rem;
+    margin: 0;
+}
+
+.card p {
+    font-family: Arial, Helvetica, sans-serif;
     color: black;
-    margin: .3rem 0
+    align-items: center;
+}
+
+.card temperature {
+    font-family: 1.5rerm;
+    margin: .3rem 0;
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+    background-color: #5594a6;
+    padding: 1rem;
 }
