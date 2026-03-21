@@ -89,7 +89,7 @@ header span {
 }
 
 .navigation li {
-    color: var(--black);
+    color: var(--white);
 }
 
 .navigation li.current {
