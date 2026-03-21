@@ -14,7 +14,7 @@ header,
 nav,
 main,
 footer {
-    max-width: 840px;
+    /* max-width: 840px; */
     margin: 0 auto;
     background-color: var(--lightPurple);
 }
@@ -98,7 +98,7 @@ header span {
 
 .navigation a:hover {
     color: #ffffff;
-    background-color: var(--medPurple);
+    background-color: #000000;
 }
 
 /* MAIN */
@@ -129,6 +129,50 @@ section h2 {
     padding: 10px;
     margin: 0;
     border-radius: 5px;
+}
+
+.hero {
+    position: relative;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    margin-bottom: 1rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero p {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    margin: 0;
+    color: #ffffff;
+    font-size: 1rem;
+    text-align: justify;
+    background: #5c5c5c;
+    padding: 0.6rem;
+    border-radius: 4px;
+}
+
+.hero button {
+    position: absolute;
+    bottom: 0.2rem;
+    right: 1rem;
+    padding: 0.5rem 0.95rem;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--medPurple);
+    color: #fff;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: var(--darkPurple);
 }
 
 section img {
@@ -177,7 +221,8 @@ footer .socials {
 
 /* Button */
 button {
-    background-color: var(--medPurple);
+
+    background-color: var(--darkPurple);
     color: #ffffff;
     border: none;
     padding: 10px 20px;
@@ -186,5 +231,23 @@ button {
 }
 
 button:hover {
+    background-color: #000000;
+}
+
+.button-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+    line-height: 1.2;
+    min-width: 110px;
     background-color: var(--darkPurple);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button-link:hover {
+    background-color: #000000;
 }
