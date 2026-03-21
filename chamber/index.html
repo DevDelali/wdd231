@@ -35,6 +35,8 @@
     <script src="scripts/index.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/current-weather.js" defer></script>
+    <script src="scripts/weather-forecast.js" defer></script>
 
 </head>
 
@@ -55,8 +57,9 @@
     </nav>
     <main>
         <div class="hero">
-            <img src="images/hero-image.jpg" alt="Ashaiman Chamber of Commerce Members" width="780" height="auto">
-            <p> Welcome to Ashaiman Chamber of Commerce, a local business directory in Ashaiman, Ghana. We are a
+            <img src="images/hero-image.jpg" alt="Ashaiman Chamber of Commerce Members">
+            <p> Welcome to Ashaiman Chamber of Commerce, a local business directory in Ashaiman, Ghana. We
+                are a
                 non-profit organization that promotes and supports the business community in Ashaiman, Ghana.
             </p>
             <button>Become a Member</button>
@@ -67,39 +70,51 @@
 
         <div class="container">
             <section>
-                <h2>Upcoming Events</h2>
-                <section>
-                    <h2>International Women's Day</h2>
-                    <img src="images/int-womens-day.jpg" alt="International Women's Day">
-                    <p>The Ghana National Chamber of Commerce and Industry (GNCCI) on Monday, 17 March 2026, convened
-                        its
-                        National Economic
-                        Empowerment Programme at the Fiesta Royal</p>
-                </section>
-                <section>
-                    <h2>International Women's Day</h2>
-                    <img src="images/int-womens-day.jpg" alt="International Women's Day">
-                    <p>The Ghana National Chamber of Commerce and Industry (GNCCI) on Monday, 17 March 2026, convened
-                        its
-                        National Economic
-                        Empowerment Programme at the Fiesta Royal</p>
-                </section>
-
+                <h2>International Women's Day</h2>
+                <img src="images/int-womens-day.jpg" alt="International Women's Day">
+                <p>The AShaiman Chamber of Commerce on Monday, 17 March 2026, convened its
+                    National Economic Empowerment Programme at the Fiesta Royal</p>
             </section>
 
             <section>
-                <h2>Current Weather</h2>
+                <h2>Meeting with GAB</h2>
+                <img src="images/gab-meeting.jpeg" alt="Meeting at GAB ">
+                <p>The Ashaiman Chamber of Commerce paid a formal courtesy call on the Ghana
+                    Association of Banks (GAB) at the Association's</p>
             </section>
 
             <section>
-                <h2>Weather Forecast</h2>
+                <h2>Job Creation in KNUST</h2>
+                <img src="images/executives-at-ash-chamber-of-commerce.jpg"
+                    alt="Executives at Ashaiman Chamber of Commerce">
+                <p>Kumasi, Ghana. 12 March 2026.The Ashaiman Chamber of Commerce has officially launched the
+                    KNUST-GNCCI Junior Chamber at Kwame</p>
             </section>
+
+
         </div>
+
+        <section>
+            <h2>Current Weather </h2>
+            <div id="current-weather" class="forecast-sect">
+                <p>The current temperature in Accra,Ghana is <span id="current-temp" class="temperature"></span></p>
+                <figure>
+                    <img id="weather-icon" src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+
+        </section>
+
+        <section>
+            <h2>Weather Forecast</h2>
+            <div id="forecast" class="forecast-sect"></div>
+        </section>
 
         <div id="cards" class="cards-sect"></div>
 
         <!-- Button to view other companies-->
-        <a href="directory.html" class="button-link">Read More....</a>
+        <a href="directory.html" class="button-link">Continue reading about other companiesx</a>
 
     </main>
     <footer>
