@@ -2,6 +2,10 @@
     --darkPurple: #28104E;
     --lightPurple: #DEACF5;
     --medPurple: #6237A0;
+    --white: #ffffff;
+    --black: #000000;
+    --ash: #5c5c5c;
+
     --text-fonts: 'Roboto', 'Condensed';
 }
 
@@ -26,7 +30,7 @@ header {
     grid-template-columns: 24px auto 44px;
     align-items: end;
     padding: 5px 0px 5px 5px;
-    color: #ffffff;
+    color: var(--white);
     column-gap: 10px;
 }
 
@@ -81,7 +85,7 @@ header span {
     padding: 0.8rem 10px;
     color: var(--darkPurple);
     text-decoration: none;
-    border: #28104E solid 1px;
+    border: var(--darkPurple) solid 1px;
 }
 
 .navigation li {
@@ -93,12 +97,12 @@ header span {
 }
 
 .navigation li.current a {
-    color: #ffffff;
+    color: var(--white);
 }
 
 .navigation a:hover {
-    color: #ffffff;
-    background-color: #000000;
+    color: var(--white);
+    background-color: var(--black);
 }
 
 /* MAIN */
@@ -149,10 +153,10 @@ section h2 {
     left: 1rem;
     right: 1rem;
     margin: 0;
-    color: #ffffff;
+    color: var(--white);
     font-size: 1rem;
     text-align: justify;
-    background: #5c5c5c;
+    background: var(--ash);
     padding: 0.6rem;
     border-radius: 4px;
 }
@@ -166,7 +170,7 @@ section h2 {
     border: none;
     border-radius: 4px;
     background-color: var(--medPurple);
-    color: #fff;
+    color: var(--white);
     cursor: pointer;
 }
 
@@ -222,7 +226,7 @@ footer .socials {
 button {
 
     background-color: var(--darkPurple);
-    color: #ffffff;
+    color: var(--white);
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -230,7 +234,7 @@ button {
 }
 
 button:hover {
-    background-color: #000000;
+    background-color: var(--black);
 }
 
 .button-link {
@@ -240,7 +244,7 @@ button:hover {
     line-height: 1.2;
     min-width: 110px;
     background-color: var(--darkPurple);
-    color: white;
+    color: var(--white);
     text-decoration: none;
     border-radius: 4px;
     cursor: pointer;
@@ -248,15 +252,15 @@ button:hover {
 }
 
 .button-link:hover {
-    background-color: #000000;
+    background-color: var(--black);
 }
 
 #current-weather {
     margin: 10px;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--ash);
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: var(--white);
 }
 
 #forecast {
@@ -269,7 +273,7 @@ button:hover {
     flex: 1 1 150px;
     margin: 10px;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 1px solid var(--ash);
     text-align: center;
-    background-color: #f9f9f9;
+    background-color: var(--white);
 }
