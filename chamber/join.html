@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join - Ashaiman Chamber of Commerce</title>
+    <meta name="description"
+        content="Ashaiman Chamber of Commerce is a non-profit organization that promotes and supports the business community in Ashaiman, Ghana.">
+    <meta name="author" content="Nyakey Paul">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- favicon -->
+    <link rel="icon" href="images/site-logo.svg">
+
+    <!-- Social Media Tags -->
+    <meta property="og:title" content="Ashaiman Chamber of Commerce , a local business directory in Ashaiman, Ghana.">
+    <meta property="og:description" content="Promoting and supporting local businesses in Ashaiman, Ghana.">
+    <meta property="og:image" content="https://devdelali.github.io/wdd231/chamber/images/hero-image.jpg">
+    <meta property="og:url" content="https://devdelali.github.io/wdd231/chamber/directory.html">
+
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <!-- Scripts -->
+    <script src="scripts/chamber.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+
+</head>
+
+<body>
+    <header>
+        <img src="images/site-logo.svg" alt="Ashaiman Chamber of Commerce Logo" width="800" height="800">
+        <span>Ashaiman Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="events.html">Events</a></li>
+            <!-- <li><a href="contact.html">Contact</a></li> -->
+        </ul>
+    </nav>
+    <main>
+        <h1>Join</h1>
+        <div class="join-sect">
+            <section>
+                <h2>Membership Application</h2>
+                <form action="thankyou.html">
+
+                    <label for="fname">First Name*:</label><br>
+                    <input type="text" id="fname" name="fname" required title="Enter your first name"
+                        autocomplete="given-name"><br>
+
+                    <label for="lname">Last Name*:</label><br>
+                    <input type="text" id="lname" name="lname" required title="Enter your last name"
+                        autocomplete="family-name"><br>
+
+                    <label for="orgtitle">Organization Title:</label><br>
+                    <input type="text" id="orgtitle" name="orgtitle"
+                        title="Minimum 7 characters. Letters spaces or hyphens only" autocomplete="organization-title"
+                        pattern="[A-Za-z\-\s]{7,}"><br>
+
+                    <label for="email">Email Address*:</label><br>
+                    <input type="email" id="email" name="email" required title="Enter your email" autocomplete="email"
+                        placeholder="example@email.com"><br>
+
+                    <label for="phone">Mobile Phone*:</label><br>
+                    <input type="tel" id="phone" name="phone" required title="Enter phone number"
+                        autocomplete="tel"><br>
+
+                    <label for="business">Business Name*:</label><br>
+                    <input type="text" id="business" name="business" required title="Enter business name"
+                        autocomplete="organization"><br>
+
+                    <label for="membership">Membership Level:</label><br>
+                    <select id="membership" name="membership">
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select><br>
+
+                    <label for="description">Business Description:</label><br>
+                    <textarea id="description" name="description" title="Describe your organization"></textarea><br>
+
+                    <input type="hidden" id="timestamp" name="timestamp">
+                    <input type="submit" value="Submit Application">
+
+                </form>
+
+            </section>
+
+
+
+            <section class="membership-cards">
+                <div class="card level-card">
+                    <h2>Membership Levels</h2>
+                    <div class="card level-card"></div>
+                    <h3>NP Membership</h3>
+                    <button class="open-modal" data-modal="npModal">
+                        Learn More
+                    </button>
+                </div>
+
+
+                <div class="card level-card">
+                    <h3>Bronze Membership</h3>
+                    <button class="open-modal" data-modal="bronzeModal">
+                        Learn More
+                    </button>
+                </div>
+
+
+                <div class="card level-card">
+                    <h3>Silver Membership</h3>
+                    <button class="open-modal" data-modal="silverModal">
+                        Learn More
+                    </button>
+                </div>
+
+
+                <div class="card level-card">
+                    <h3>Gold Membership</h3>
+                    <button class="open-modal" data-modal="goldModal">
+                        Learn More
+                    </button>
+                </div>
+            </section>
+        </div>
+
+    <!-- MODALS -->
+
+    <dialog id="npModal">
+
+        <h2>NP Membership</h2>
+
+        <p>Free membership for non-profit organizations.</p>
+
+        <button class="close-modal">Close</button>
+
+    </dialog>
+
+
+    <dialog id="bronzeModal">
+
+        <h2>Bronze Membership</h2>
+
+        <p>Includes Bronze benefits plus access to networking events and listing in directory.</p>
+
+        <button class="close-modal">Close</button>
+
+    </dialog>
+
+
+    <dialog id="silverModal">
+
+        <h2>Silver Membership</h2>
+
+        <p>Includes Silver benefits plus training workshops.</p>
+
+        <button class="close-modal">Close</button>
+
+    </dialog>
+
+
+    <dialog id="goldModal">
+
+        <h2>Gold Membership</h2>
+
+        <p>Includes Gold benefits plus homepage spotlight advertising.</p>
+
+        <button class="close-modal">Close</button>
+
+    </dialog>
+    </main>
+    <footer>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/npdelali/" target="_blank"><img src="images/linkedin.svg"
+                    alt="LinkedIn" width="16" height="16">LinkedIn</a>
+            <a href="https://github.com/DevDelali" target="_blank"><img src="images/github.svg" alt="GitHub" width="16"
+                    height="16">GitHub</a>
+            <a href="https://www.telegram.org" target="_blank"><img src="images/telegram.svg" alt="Telegram" width="16"
+                    height="16">Telegram</a>
+        </div>
+
+        <p>&copy; <span id="Currentyear"></span> Nyakey Paul- Ghana.</p>
+        <p> <span id="lastModified"></span></p>
+    </footer>
+</body>
+
+</html>

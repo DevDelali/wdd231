@@ -101,4 +101,26 @@
         text-align: center;
         background-color: var(--white);
     }
+
+    /* -----    JOIN WEBPAGE ------*/
+    .join-sect {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .join-sect textarea,
+    .join-sect input[type="text"],
+    .join-sect input[type="email"],
+    .join-sect input[type="tel"] {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+
+@media only screen and (min-width: 900px) {
+    .join-sect {
+        grid-template-columns: 1fr 1fr;
+    }
 }
