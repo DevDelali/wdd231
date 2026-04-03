@@ -282,6 +282,34 @@ button:hover {
     background-color: var(--white);
 }
 
+/* -----    THANK YOU WEBPAGE ------*/
+.thankyou-section {
+    margin: 20px;
+    background-color: var(--white);
+    border: 1px solid var(--ash);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.thankyou-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+    padding: 12px;
+    row-gap: 6px;
+}
+
+.thankyou-details dt {
+    color: var(--darkPurple);
+    font-weight: 700;
+    margin: 0;
+}
+
+.thankyou-details dd {
+    margin: 0 0 10px;
+    color: var(--black);
+}
+
 dialog {
     background-color: var(--medPurple);
 }
