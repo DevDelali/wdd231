@@ -94,7 +94,7 @@ header span {
 
 .navigation li.current {
     background-color: var(--medPurple);
-    color: var(--black);
+    color: var(--white);
 
 
 }
