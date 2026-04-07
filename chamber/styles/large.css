@@ -135,7 +135,7 @@
         padding: 10px;
         border: 1px solid var(--ash);
         border-radius: 6px;
-        background-color: #f8f8f8;
+        background-color: var(--white);
     }
 
     .discovery-section {

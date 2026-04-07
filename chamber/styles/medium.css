@@ -10,7 +10,7 @@
         padding: 10px;
         border: 1px solid var(--ash);
         border-radius: 6px;
-        background-color: #f8f8f8;
+        background-color: var(--white);
     }
 
     .place-card img {
@@ -19,7 +19,7 @@
     }
 
     .place-card img:hover {
-        box-shadow: 0 0 50px #333;
+        box-shadow: 0 0 50px var(--ash);
     }
 
 }
