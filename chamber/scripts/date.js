@@ -26,3 +26,5 @@ if (lastModified) {
 if (currentYear) {
     currentYear.textContent = today.getFullYear();
 }
+
+
