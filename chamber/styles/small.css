@@ -317,3 +317,54 @@ dialog {
 dialog p {
     color: var(--white);
 }
+
+/* discoveryPageDesign */
+.discovery-section {
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    gap: 5px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.place-card {
+    display: grid;
+    grid-template-areas:
+        "name"
+        "photograph"
+        "description"
+        "address";
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid var(--ash);
+    border-radius: 6px;
+    background-color: #f8f8f8;
+}
+
+.place-card h2 {
+    grid-area: name;
+}
+
+.place-card img {
+    grid-area: photograph;
+    width: 100%;
+    /* margin: 12px 0; */
+}
+
+.place-card p:first-of-type {
+    grid-area: description;
+}
+
+.place-card p:last-of-type {
+    grid-area: address;
+}
+
+.place-card h2,
+.place-card p {
+    margin: 0 0 12px;
+}
+
+.place-card p:last-child {
+    margin-bottom: 0;
+}

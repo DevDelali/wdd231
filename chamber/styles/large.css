@@ -1,4 +1,4 @@
-@media only screen and (min-width: 600px) {
+@media only screen and (min-width: 650px) {
 
     header {
         grid-template-columns: 24px auto;
@@ -119,8 +119,26 @@
 }
 
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1025px) {
     .join-sect {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .place-card {
+        display: grid;
+        grid-template-areas:
+            "name"
+            "photograph"
+            "description"
+            "address";
+        gap: 10px;
+        padding: 10px;
+        border: 1px solid var(--ash);
+        border-radius: 6px;
+        background-color: #f8f8f8;
+    }
+
+    .discovery-section {
         grid-template-columns: 1fr 1fr;
     }
 }

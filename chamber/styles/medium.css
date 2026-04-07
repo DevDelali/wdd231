@@ -1,0 +1,25 @@
+@media only screen and (min-width: 650px) {
+
+    .place-card {
+        display: grid;
+        grid-template-areas:
+            "photograph name"
+            "photograph description"
+            "photograph address";
+        gap: 10px;
+        padding: 10px;
+        border: 1px solid var(--ash);
+        border-radius: 6px;
+        background-color: #f8f8f8;
+    }
+
+    .place-card img {
+        width: 390px;
+        /* margin: 12px 0; */
+    }
+
+    .place-card img:hover {
+        box-shadow: 0 0 50px #333;
+    }
+
+}
