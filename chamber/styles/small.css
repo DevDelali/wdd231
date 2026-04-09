@@ -368,3 +368,7 @@ dialog p {
 .place-card p:last-child {
     margin-bottom: 0;
 }
+
+.place-card button {
+    justify-self: start;
+}
