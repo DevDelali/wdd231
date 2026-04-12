@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Social Media Tags -->
+    <!-- Facebook tag -->
+    <meta property="og:title" content="OK Phones and Accessories - Your Trusted Mobile Source">
+    <meta property="og:description" content="We pride ourselves on being a trusted source for all your mobile needs.">
+    <meta property="og:image" content="images/profile.jpg">
+    <meta property="og:url" content="https://paulnyakey.com">
+
+
+    <title>Contact - OK Phones and Accessories</title>
+    <meta name="description" content="Get in touch with OK Phones and Accessories.">
+    <meta name="author" content="Nyakey Paul">
+
+    <!-- Font -->
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/fav-icon.webp">
+
+    <!-- StyleSheets -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+
+</head>
+
+<body>
+    <header>
+        <img src="images/phone-desktop.svg" alt="OK Phones and Accessories Logo">
+        <span>OK Phones and Accessories</span>
+        <button id="ham-btn" class="hamburger"></button>
+
+        <nav id="nav-bar" class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="current"><a href="contact.html">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="hero-bg hero-bg-color">
+            <img src="images/c-support.webp" alt="customer support image" width="100%" height="auto, ">
+            <h2>Get in Touch</h2>
+            <span>Have a question, feedback, or need support? Reach out and we'll respond as soon as possible.</span>
+        </div>
+
+        <h1 class="bar">Contact Us</h1>
+
+        <div class="container">
+            <section class="phone-card">
+                <h2>Contact Information</h2>
+                <p>Email: info@okphones.com</p>
+                <p>Phone: +233 123 456 789</p>
+                <p>Address: 123 Main Street, Accra, Ghana</p>
+            </section>
+
+            <section class="phone-card contact-form-card">
+                <h2>Send Us A Message</h2>
+                <form class="contact-form" action="thankyou.html" method="get">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </div>
+
+        <section class="map-section phone-card">
+            <h2>Find Us Here</h2>
+
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d31759.156805863633!2d-0.0543255!3d5.7283187!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sgh!4v1775979030549!5m2!1sen!2sgh"
+                width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/npdelali/" target="_blank"><img src="images/linkedin.svg"
+                    alt="LinkedIn" width="16" height="16">LinkedIn</a>
+            <a href="https://github.com/DevDelali" target="_blank"><img src="images/github.svg" alt="GitHub" width="16"
+                    height="16">GitHub</a>
+            <a href="https://www.telegram.org" target="_blank"><img src="images/telegram.svg" alt="Telegram" width="16"
+                    height="16">Telegram</a>
+            <a href="https://www.youtube.com" target="_blank"><img src="images/youtube.svg" alt="YouTube" width="16"
+                    height="16">YouTube</a>
+        </div>
+
+        <p>&copy; <span id="currentYear"></span> Nyakey Paul- Ghana.</p>
+        <p> <span id="lastModified"></span></p>
+    </footer>
+
+    <!-- Javascript -->
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js"></script>
+</body>
+
+</html>

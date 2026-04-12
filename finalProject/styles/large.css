@@ -1,0 +1,27 @@
+@media only screen and (min-width:1024px) {
+
+    .phones-sect {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+
+    }
+
+    .hero-bg h2 {
+        top: 30%;
+        left: 25%;
+        font-size: 50px;
+    }
+
+    .hero-bg span {
+        top: 45%;
+        left: 25%;
+        font-size: 24px;
+    }
+
+    .hero-bg #openButton {
+        top: 55%;
+        left: 25%;
+    }
+
+}
