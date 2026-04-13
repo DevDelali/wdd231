@@ -88,7 +88,10 @@
         font-size: 20px;
     }
 
-    .hero-bg #openButton {
+    .hero-bg .open-modal {
+        font-size: 16px;
+        margin: 20px;
+        padding: 12px 16px;
         top: 45%;
         left: 20%;
     }

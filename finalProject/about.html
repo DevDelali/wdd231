@@ -59,14 +59,15 @@
             <h2>OK Phones and Accessories Shops</h2>
             <span>Trusted source for all your mobile needs</span>
 
-            <dialog id="myDialog">
-                <h2>OK Phones and Accessories</h2>
-                <p>We sell budget mobile phones and accessories for students and other locals in Ghana. Our aim to help
-                    everyone meet day to day needs with ease.</p>
-                <button id="closeButton">Close</button>
-            </dialog>
-            <button id="openButton">Read More</button>
+            <button class="open-modal" data-modal="aboutModal">Read More</button>
         </div>
+
+        <dialog id="aboutModal">
+            <h2>OK Phones and Accessories</h2>
+            <p>We sell budget mobile phones and accessories for students and other locals in Ghana. Our aim to help
+                everyone meet day to day needs with ease.</p>
+            <button class="close-modal">Close</button>
+        </dialog>
         <h1 class="bar">About</h1>
 
 
@@ -121,9 +122,10 @@
     </footer>
     <!-- Javascript -->
     <script src="scripts/navigation.js" defer></script>
-    <!-- <script src="scripts/course.js"></script> -->
     <script src="scripts/date.js" defer></script>
     <script type="module" src="scripts/okphones.js"></script>
+    <script src="scripts/about.js" defer></script>
+
 </body>
 
 </html>

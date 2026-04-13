@@ -25,8 +25,8 @@
         font-size: 24px;
     }
 
-    .hero-bg #openButton {
-        top: 55%;
+    .hero-bg .open-modal {
+        top: 70%;
         left: 25%;
     }
 

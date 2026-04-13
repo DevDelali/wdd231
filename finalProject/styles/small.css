@@ -157,6 +157,39 @@ footer a {
     background-color: var(--lightgreen);
 }
 
+/* Dialog */
+dialog {
+    max-width: 90vw;
+    max-height: 90vh;
+    background-color: var(--lightgreen);
+    border: 1px solid var(--green);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+dialog h2 {
+    margin: 0 0 10px 0;
+    color: var(--blue);
+}
+
+dialog p {
+    margin: 0 0 15px 0;
+    color: var(--black);
+}
+
+dialog button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 6px;
+    background: var(--green);
+    color: var(--white);
+    cursor: pointer;
+}
+
+dialog button:hover {
+    background: var(--blue);
+}
+
 /* Body */
 /* main {
     margin: 0 auto;
@@ -192,8 +225,7 @@ div.content p {
 
 .hero-bg h2,
 .hero-bg span,
-.hero-bg #openButton,
-.hero-bg #myDialog {
+.hero-bg .open-modal {
     position: absolute;
     z-index: 1;
 }
@@ -214,7 +246,7 @@ div.content p {
     /* font-weight: 700; */
 }
 
-.hero-bg #openButton {
+.hero-bg .open-modal {
     top: 50%;
     left: 20%;
     padding: 10px 14px;
@@ -222,12 +254,11 @@ div.content p {
     border-radius: 8px;
     background: var(--green);
     color: var(--white);
+    cursor: pointer;
 }
 
-.hero-bg #myDialog {
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.hero-bg .open-modal:hover {
+    background: var(--blue);
 }
 
 .side-by-side {
