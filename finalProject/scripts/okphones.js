@@ -8,7 +8,7 @@ if (phonesContainer) {
         const phoneCard = document.createElement("div");
         phoneCard.className = "phone-card";
         phoneCard.innerHTML = `
-            <img src="${phone.image}" alt="${phone.name}" loading="lazy">
+            <img src="${phone.image}" alt="${phone.name}" loading="lazy" width="250">
             <h2>${phone.name}</h2>
             <p>RAM: ${phone.ram}</p>
             <p>Storage: ${phone.rom}</p>
