@@ -11,7 +11,6 @@
 header {
     display: grid;
     background-color: var(--green);
-    padding: 10px;
     grid-template-columns: 24px auto 44px;
     padding: 5px 0px 5px 5px;
     border-bottom: 1px solid var(--black);
@@ -27,7 +26,7 @@ header img {
 }
 
 header span {
-    font-size: 1.5em;
+    font-size: 24px;
     font-weight: bold;
     margin-left: 10px;
 }
@@ -44,12 +43,12 @@ header span {
 
 .hamburger::before {
     content: "\2630";
-    font-size: 1.5rem;
+    font-size: 24px;
 }
 
 .hamburger.show::before {
     content: "\00D7";
-    font-size: 1.5rem;
+    font-size: 24px;
 }
 
 /* ---------NAVIGATION------ */
@@ -108,13 +107,13 @@ h1.bar {
 /* ---------FOOTER------ */
 footer {
     background: var(--green);
-    padding: 1rem 10px;
+    padding: 16px 10px;
     text-align: center;
 }
 
 footer p {
     color: var(--white);
-    margin: 0.5rem 0;
+    margin: 8px 0;
 }
 
 footer a {
@@ -126,13 +125,13 @@ footer a {
 }
 
 .socials {
-    padding: 1rem 0;
+    padding: 16px 0;
     display: flex;
     flex-direction: column;
     align-items: stretch;
-    row-gap: 0.75rem;
-    width: min(100%, 20rem);
-    margin: 0 auto 1rem;
+    row-gap: 12px;
+    width: min(100%, 320px);
+    margin: 0 auto 16px;
 }
 
 .socials a {
@@ -166,7 +165,7 @@ footer a {
 
 
 div.content {
-    padding: 1rem;
+    padding: 16px;
 }
 
 div.content p {
