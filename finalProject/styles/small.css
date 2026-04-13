@@ -90,6 +90,7 @@ header span {
 
 h1,
 h2 {
+    font-family: 'Roboto Condensed', sans-serif;
     margin-left: 10px;
     color: var(--blue);
 }
