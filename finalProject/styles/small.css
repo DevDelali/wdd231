@@ -37,7 +37,6 @@ header span {
     border: none;
     cursor: pointer;
     color: var(--white);
-    cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -106,6 +105,7 @@ h1.bar {
 
 /* ---------FOOTER------ */
 footer {
+    color: var(--white);
     background: var(--green);
     padding: 16px 10px;
     text-align: center;
