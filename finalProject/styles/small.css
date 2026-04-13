@@ -161,7 +161,7 @@ footer a {
 
 /* Dialog */
 dialog {
-    width: 50vw;
+    width: 90vw;
     max-width: 500px;
     max-height: 90vh;
     background-color: var(--lightgreen);
